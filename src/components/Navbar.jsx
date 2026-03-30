@@ -1,10 +1,10 @@
 function Navbar() {
   return (
-    <nav className="bg-[#5a2d1a] text-white px-10 py-4 flex items-center justify-between">
+    <nav className="bg-[#5a2d1a] text-white flex items-center justify-between px-10 py-5">
       
       
       <div className="flex items-center gap-2">
-        <span className="text-2xl font-bold">Hornitos</span>
+        <span className="text-4xl font-bold">Hornitos</span>
       </div>
 
       
