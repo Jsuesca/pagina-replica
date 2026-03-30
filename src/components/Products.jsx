@@ -16,12 +16,12 @@ function Products() {
   const productos = [
     { nombre: "Pan artesanal", precio: "$5.000", img: panArtesanal },
     { nombre: "Capuccino", precio: "$4.000", img: capuccino },
-    { nombre: "Postre chocolate", precio: "$8.000", img: postreChocolate },
+    { nombre: "Postre de chocolate", precio: "$8.000", img: postreChocolate },
     { nombre: "Café", precio: "$3.000", img: cafe },
 
     { nombre: "Pan integral", precio: "$6.000", img: panIntegral },
     { nombre: "Donas", precio: "$3.500", img: donas },
-    { nombre: "Torta chocolate", precio: "$9.000", img: tortaChocolate },
+    { nombre: "Torta de chocolate", precio: "$9.000", img: tortaChocolate },
     { nombre: "Horneados", precio: "$4.500", img: horneados },
 
     { nombre: "Pan de queso", precio: "$4.000", img: panQueso },
@@ -33,30 +33,32 @@ function Products() {
   ];
 
   return (
-    <section className="p-10 bg-gray-100 text-center">
+    <section className="py-12 bg-[#f5f5f5] text-center">
 
-
-      <h2 className="text-5xl font-bold mb-10 text-[#5a2d1a]">
+      
+      <h2 className="text-5xl font-bold text-[#5a2d1a] mb-4">
         Menú
       </h2>
 
+      
+      <div className="w-3/4 h-[2px] bg-[#5a2d1a] mx-auto mb-10"></div>
 
-
-      <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      
+      <div className="grid md:grid-cols-4 gap-10 max-w-7xl mx-auto px-6">
         {productos.slice(0, 12).map((p, i) => (
           <div key={i} className="group cursor-pointer">
 
-
+            
             <div className="overflow-hidden rounded-md">
               <img
                 src={p.img}
                 alt={p.nombre}
-                className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
             
-            <h3 className="mt-4 text-2xl font-bold text-[#5a2d1a] uppercase tracking-wide group-hover:text-orange-500 transition">
+            <h3 className="mt-4 text-xl font-bold text-[#5a2d1a] uppercase tracking-wide group-hover:text-orange-500 transition">
               {p.nombre}
             </h3>
 
@@ -64,19 +66,19 @@ function Products() {
         ))}
       </div>
 
-      {/* 🔹 ÚLTIMO PRODUCTO */}
-      <div className="flex justify-center mt-12">
-        <div className="group cursor-pointer w-72">
+      
+      <div className="flex justify-center mt-14">
+        <div className="group cursor-pointer w-80">
 
           <div className="overflow-hidden rounded-md">
             <img
               src={productos[12].img}
               alt={productos[12].nombre}
-              className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
 
-          <h3 className="mt-4 text-2xl font-bold text-[#5a2d1a] uppercase tracking-wide group-hover:text-orange-500 transition">
+          <h3 className="mt-4 text-xl font-bold text-[#5a2d1a] uppercase tracking-wide group-hover:text-orange-500 transition">
             {productos[12].nombre}
           </h3>
 

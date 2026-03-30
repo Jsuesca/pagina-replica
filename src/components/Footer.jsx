@@ -6,7 +6,7 @@ function Footer() {
       
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm">
         
-        {/* 🔹 IZQUIERDA */}
+        
         <div className="flex items-center gap-4">
           <img
             src={industria}
@@ -15,7 +15,7 @@ function Footer() {
           />
         </div>
 
-        {/* 🔹 DERECHA */}
+        
         <p className="mt-4 md:mt-0 text-white/80">
           Creado por Grupo 7
         

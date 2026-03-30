@@ -27,7 +27,7 @@ function Carousel() {
 
   const [current, setCurrent] = useState(0);
 
-  
+
 
 
   useEffect(() => {
@@ -41,18 +41,18 @@ function Carousel() {
   return (
     <section className="relative w-full h-[550px] overflow-hidden">
 
-      
+
       <img
         src={slides[current].img}
         className="absolute w-full h-full object-cover transition-all duration-700"
       />
 
-      
+
       <div className="absolute inset-0 bg-black/40"></div>
 
-      
+
       <div className="absolute inset-0 flex flex-col justify-center items-end text-right px-16 text-white max-w-xl ml-auto">
-        
+
         <h2 className="text-5xl font-bold mb-6">
           {slides[current].title}
         </h2>
@@ -66,11 +66,11 @@ function Carousel() {
         </p>
 
         <button className="bg-orange-500 px-8 py-4 rounded-full text-xl font-semibold hover:bg-orange-800 transition">
-  Ver productos
-</button>
+          Ver productos
+        </button>
       </div>
 
-     
+
 
 
 
@@ -90,7 +90,7 @@ function Carousel() {
         ›
       </button>
 
-      
+
 
 
 
@@ -99,9 +99,8 @@ function Carousel() {
           <div
             key={i}
             onClick={() => setCurrent(i)}
-            className={`w-3 h-3 rounded-full cursor-pointer ${
-              i === current ? "bg-white" : "bg-white/50"
-            }`}
+            className={`w-3 h-3 rounded-full cursor-pointer ${i === current ? "bg-white" : "bg-white/50"
+              }`}
           ></div>
         ))}
       </div>

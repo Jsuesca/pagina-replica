@@ -4,11 +4,11 @@ function Navbar() {
       
       
       <div className="flex items-center gap-2">
-        <span className="text-4xl font-bold">Hornitos</span>
+        <span className="text-5xl font-bold">Hornitos</span>
       </div>
 
       
-      <ul className="hidden md:flex gap-16 text-lg font-semibold">
+      <ul className="hidden md:flex gap-16 text-4xl font-semibold">
         <li className="cursor-pointer hover:underline">Menú</li>
         <li className="cursor-pointer hover:underline">Pedidos Programados</li>
         <li className="cursor-pointer hover:underline">Visítanos</li>
